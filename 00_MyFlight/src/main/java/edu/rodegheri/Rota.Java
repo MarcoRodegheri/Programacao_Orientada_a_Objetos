@@ -1,13 +1,13 @@
 package edu.rodegheri;
 
-public class Rota{
+pubic class Rota{
 
     private CiaAerea ciaAerea;
     private Aeroporto destino;
     private Aeroporto origem;
     private Aeronave aeronave;
 
-    public Rota(CiaAerea ciaAerea, Aerporto destino, Aerporto origem, Aeronave aeronave){
+    public Rota(CiaAerea ciaAerea, Aeroporto destino, Aeroporto origem, Aeronave aeronave){
         this.ciaAerea = ciaAerea;
         this.destino = destino;
         this.origem = origem;
