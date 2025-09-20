@@ -1,6 +1,6 @@
 package edu.rodegheri;
 
-pubic class Rota{
+public class Rota{
 
     private CiaAerea ciaAerea;
     private Aeroporto destino;

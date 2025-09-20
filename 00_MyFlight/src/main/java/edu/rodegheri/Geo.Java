@@ -30,8 +30,8 @@ public class Geo{
         double phi = (lat1 - lat2)/2;
         double lambda = (lon1 - lon2)/2;
 
-        double p1 = Math.pow(math.sin(phi), 2);
-        double p2 = Math.pow(math.sin(lambda), 2) * Math.cos(lat1) * Math.cos(lat2);
+        double p1 = Math.pow(Math.sin(phi), 2);
+        double p2 = Math.pow(Math.sin(lambda), 2) * Math.cos(lat1) * Math.cos(lat2);
 
         double p3 = p1 + p2;
 
@@ -50,8 +50,8 @@ public class Geo{
         double phi = (lat1 - lat2)/2;
         double lambda = (lon1 - lon2)/2;
 
-        double p1 = Math.pow(math.sin(phi), 2);
-        double p2 = Math.pow(math.sin(lambda), 2) * Math.cos(lat1) * Math.cos(lat2);
+        double p1 = Math.pow(Math.sin(phi), 2);
+        double p2 = Math.pow(Math.sin(lambda), 2) * Math.cos(lat1) * Math.cos(lat2);
 
         double p3 = p1 + p2;
 
