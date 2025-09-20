@@ -6,10 +6,8 @@ public class Rota{
     private Aeroporto destino;
     private Aeroporto origem;
     private Aeronave aeronave;
-    
-    
 
-    public Rota(CiaAerea ciaAerea, Aeroporto destino, Aerporto origem, Aeronave aeronave){
+    public Rota(CiaAerea ciaAerea, Aerporto destino, Aerporto origem, Aeronave aeronave){
         this.ciaAerea = ciaAerea;
         this.destino = destino;
         this.origem = origem;

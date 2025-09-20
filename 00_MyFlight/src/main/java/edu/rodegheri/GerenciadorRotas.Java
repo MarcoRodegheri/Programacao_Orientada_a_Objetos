@@ -14,7 +14,7 @@ public class GerenciadorRotas{
         this.rotas.add(rota);
     }
 
-    public ArrayList<Rota> lsitarTodas(){
+    public ArrayList<Rota> listarTodas(){
         return this.rotas;
     }
 
@@ -27,7 +27,7 @@ public class GerenciadorRotas{
                 listaOrigem.add(r);
         }
 
-        return r;
+        return listaOrigem;
 
 
     }

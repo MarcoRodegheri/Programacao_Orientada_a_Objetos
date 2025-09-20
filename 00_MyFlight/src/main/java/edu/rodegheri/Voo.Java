@@ -1,4 +1,4 @@
-pacakage edu.rodegheri;
+package edu.rodegheri;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -12,7 +12,7 @@ public class Voo{
     private Rota rota;
     private Status status;
 
-    public Voo(LocalDateTime dataHora, Duration  duracao, Rota rota, Status status){
+    public Voo(LocalDateTime dataHora, Duration  duracao, Rota rota){
         this.dataHora = dataHora;
         this.duracao = duracao;
         this.rota = rota;
@@ -40,6 +40,6 @@ public class Voo{
     }
 
     public String toString(){
-        return "\nData e hora: "+this.dataHora+"\nDuração:"+this.duracao+"\nRota: "this.rota+"\nStatus: "+this.status;
+        return "\nData e hora: "+this.dataHora+"\nDuração:"+this.duracao+"\nRota: "+this.rota+"\nStatus: "+this.status;
     }
 }

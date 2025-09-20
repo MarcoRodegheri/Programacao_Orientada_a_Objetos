@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class GerenciadorAeronaves{
 
-    private ArrayList<Aeronave> areovanes;
+    private ArrayList<Aeronave> aeronaves;
 
     public GerenciadorAeronaves(){
         this.areovanes = new ArrayList<>();

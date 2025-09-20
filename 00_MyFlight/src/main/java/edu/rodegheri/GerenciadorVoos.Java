@@ -1,6 +1,7 @@
 package edu.rodegheri;
 
 import java.util.ArrayList;
+import java.time.LocalDate;
 
 public class GerenciadorVoos{
 
@@ -14,7 +15,7 @@ public class GerenciadorVoos{
         this.voos.add(voo);
     }
 
-    public ArrayList<Voo>(){
+    public ArrayList<Voo> listarTodos(){
         return this.voos;
     }
 
@@ -23,11 +24,11 @@ public class GerenciadorVoos{
         ArrayList<Voo> listaVoos = new ArrayList<>();
 
         for(Voo v: voos){
-            if(v.getDataHora().toLocaldate().equals(data))
+            if(v.getDataHora().toLocalDate().equals(data))
                 listaVoos.add(v);
         }
 
-        return v;
+        return listaVoos;
     }
     
 }

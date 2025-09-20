@@ -1,4 +1,4 @@
-pacakage edu.rodegheri;
+package edu.rodegheri;
 
 public class CiaAerea{
     private String codigo;
