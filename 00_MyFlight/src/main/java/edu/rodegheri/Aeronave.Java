@@ -1,6 +1,6 @@
 package edu.rodegheri;
 
-public class Aeronave{
+public class Aeronave implements Contavel{
 
     private String codigo;
     private String descricao;

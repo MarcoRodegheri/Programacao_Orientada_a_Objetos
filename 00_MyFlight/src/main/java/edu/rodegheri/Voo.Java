@@ -19,6 +19,13 @@ public class Voo{
         this.status = Status.CONFIRMADO;   
     }
 
+    public Voo(Duration duracao, Rota rota){
+        this.dataHora = LocalDateTime.of(2016, 8, 12, 12, 0);
+        this.duracao = duracao;
+        this.rota = rota;
+        this.status = Status.CONFIRMADO;   
+    }
+
     public LocalDateTime getDataHora(){
         return this.dataHora;
     }

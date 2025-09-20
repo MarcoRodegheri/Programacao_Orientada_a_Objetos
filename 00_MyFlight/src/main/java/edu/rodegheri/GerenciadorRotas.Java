@@ -28,10 +28,5 @@ public class GerenciadorRotas{
         }
 
         return listaOrigem;
-
-
     }
-
-
-
 }
