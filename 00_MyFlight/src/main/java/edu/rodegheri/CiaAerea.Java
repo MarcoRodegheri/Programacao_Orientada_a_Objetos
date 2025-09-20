@@ -17,6 +17,7 @@ public class CiaAerea{
         return this.nome;
     }
 
+    @Override
     public String toString(){
         return "\nCódigo: "+this.codigo+"\nNome: "+this.nome;
     }

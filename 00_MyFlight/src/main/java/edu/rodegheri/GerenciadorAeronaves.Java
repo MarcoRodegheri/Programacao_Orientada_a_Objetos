@@ -1,6 +1,7 @@
 package edu.rodegheri;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class GerenciadorAeronaves{
 
@@ -25,6 +26,10 @@ public class GerenciadorAeronaves{
         }
 
         return null;
+    }
+
+    public void ordenaDescricao(){
+        Collections.sort(this.aeronaves);
     }
 
 }

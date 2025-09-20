@@ -58,8 +58,9 @@ public class Geo{
         double raiz = Math.sqrt(p3);
 
         return 2 * r * Math.asin(raiz);
-    }
+    }   
 
+    @Override
     public String toString(){
         return "\nLatitude "+this.latitude+"\nLongitude: "+this.longitude;
     }

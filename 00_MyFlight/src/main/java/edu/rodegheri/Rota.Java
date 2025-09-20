@@ -1,6 +1,6 @@
 package edu.rodegheri;
 
-public class Rota{
+public class Rota implements Comparable<Rota>{
 
     private CiaAerea ciaAerea;
     private Aeroporto destino;
@@ -30,6 +30,12 @@ public class Rota{
         return this.aeronave;
     }
 
+    @Override
+    public int compareTo(Rota outra){
+        return this.ciaAerea.getNome().compareTo(outra.getCiaAerea().getNome());
+    }
+    
+    @Override
     public String toString(){
         return "\nCompanhia Aérea: "+this.ciaAerea+"\nDestino: "+this.destino+"\nOrigem: "+this.origem+"\nAeronave: "+this.aeronave;
     }

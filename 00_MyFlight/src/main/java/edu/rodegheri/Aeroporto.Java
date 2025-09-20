@@ -1,6 +1,6 @@
 package edu.rodegheri;
 
-public class Aeroporto{
+public class Aeroporto implements Comparable<Aeroporto>{
 
     private String codigo;
     private String nome;
@@ -24,6 +24,12 @@ public class Aeroporto{
         return this.loc;
     }
 
+    @Override
+    public int compareTo(Aeroporto outro){
+        return this.nome.compareTo(outro.getNome());
+    }
+
+    @Override
     public String toString(){
         return "\nCódigo: "+this.codigo+"\nNome: "+this.nome+"\nLocalização: "+this.loc;
     }

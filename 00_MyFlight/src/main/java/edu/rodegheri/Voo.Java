@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 public class Voo{
 
-    public enum Status {CONFIRMADO, ATRASADO, CANCELADO};
+    public enum Status {CONFIRMADO, ATRASADO, CANCELADO}
 
     private LocalDateTime dataHora;
     private Duration duracao;
@@ -46,6 +46,7 @@ public class Voo{
         this.status = novo;
     }
 
+    @Override
     public String toString(){
         return "\nData e hora: "+this.dataHora+"\nDuração:"+this.duracao+"\nRota: "+this.rota+"\nStatus: "+this.status;
     }

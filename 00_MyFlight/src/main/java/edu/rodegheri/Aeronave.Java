@@ -1,6 +1,6 @@
 package edu.rodegheri;
 
-public class Aeronave implements Contavel{
+public class Aeronave implements Contavel, Comparable<Aeronave>{
 
     private String codigo;
     private String descricao;
@@ -31,6 +31,12 @@ public class Aeronave implements Contavel{
         return contObj;
     }
 
+    @Override
+    public int compareTo(Aeronave outra){
+        return this.descricao.compareTo(outra.getDescricao());
+    }
+
+    @Override
     public String toString(){
         return "\nCódigo: "+this.codigo+"\nDescrição: "+this.descricao+"\nCapacidade: "+this.capacidade;
     }
