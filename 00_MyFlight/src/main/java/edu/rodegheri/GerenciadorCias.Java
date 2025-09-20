@@ -1,4 +1,4 @@
-pacakage edu.rodegheri;
+package edu.rodegheri;
 
 import java.util.ArrayList;
 
