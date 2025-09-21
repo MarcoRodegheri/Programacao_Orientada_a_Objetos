@@ -7,7 +7,7 @@ public class VooEscalas extends Voo {
 
     private Rota rotaFinal;
 
-    public VooEscalas(Rota r1, Rota r2){
+    public VooEscalas(LocalDateTime dataHora, Duration  duracao, Rota rota, Rota rotaFinal){
         super(dataHora, duracao, rota);
         this.rotaFinal = rotaFinal;
     }
@@ -16,5 +16,13 @@ public class VooEscalas extends Voo {
         super(LocalDateTime.of(2016,8,12,12,0), duracao, rota); 
         this.rotaFinal = rotaFinal;
     }
+
+    public Rota getRotaFinal(){
+        return this.rotaFinal;
+    }
     
+    @Override
+    public String toString(){
+        return super.toString() + "\nRota Final: "+this.rotaFinal;
+    }
 }
