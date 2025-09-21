@@ -12,10 +12,9 @@ public class VooVariasEscalas extends Voo{
        super(dataHora, duracao, rota);
 
         this.variasEscalas = new ArrayList<>();
+
         this.variasEscalas.add(new Voo(super.getDataHora(), super.getDuracao(), super.getRota()));
-
-
-        this.variasEscalas.add(listaVoo);
+        this.variasEscalas.addAll(listaVoo);
     }
 
     public ArrayList<Voo> getVariasEscalas(){
