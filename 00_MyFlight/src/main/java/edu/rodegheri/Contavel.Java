@@ -1,5 +1,5 @@
 package edu.rodegheri;
 
-interface Contavel{
-    int getTotal();
+public interface Contavel{
+    public int getTotal();
 }

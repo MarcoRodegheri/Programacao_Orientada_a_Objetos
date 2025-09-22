@@ -46,6 +46,10 @@ public class Voo{
         this.status = novo;
     }
 
+    public void setRota(Rota rota){
+        this.rota = rota;
+    }
+
     @Override
     public String toString(){
         return "\nData e hora: "+this.dataHora+"\nDuração:"+this.duracao+"\nRota: "+this.rota+"\nStatus: "+this.status;
