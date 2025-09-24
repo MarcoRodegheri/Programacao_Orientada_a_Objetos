@@ -19,6 +19,10 @@ public class VooEscalas extends Voo {
     public void adicionaRota(Rota r) {
         if (r != null) {
             rotas.add(r);
+           /* setRota(new Rota(variasEscalas.get(0).getRota().getCiaAerea(), 
+                        variasEscalas.get(0).getRota().getOrigem(), 
+                        variasEscalas.get(variasEscalas.size()-1).getRota().getDestino(),
+                        variasEscalas.get(0).getRota().getAeronave())); */
         }
     }
 
