@@ -48,7 +48,7 @@ MyFlight/
     │   ├── GerenciadorRotas.java
     │   └── GerenciadorVoos.java
     └── test/java/edu/rodegheri/
-        └── AppTest.java                  # Testes unitários (JUnit 5)
+        └── AppTest.java                
 ```
 
 ## Como rodar
