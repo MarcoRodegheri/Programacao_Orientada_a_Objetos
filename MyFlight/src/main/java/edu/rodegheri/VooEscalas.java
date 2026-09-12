@@ -19,10 +19,6 @@ public class VooEscalas extends Voo {
     public void adicionaRota(Rota r) {
         if (r != null) {
             rotas.add(r);
-           /* setRota(new Rota(variasEscalas.get(0).getRota().getCiaAerea(), 
-                        variasEscalas.get(0).getRota().getOrigem(), 
-                        variasEscalas.get(variasEscalas.size()-1).getRota().getDestino(),
-                        variasEscalas.get(0).getRota().getAeronave())); */
         }
     }
 
@@ -78,31 +74,3 @@ public class VooEscalas extends Voo {
         return String.format("%dh %02dm", h, m);
     }
 }
-
-/* 
-public class VooVariasEscalas extends Voo {
-
-    private ArrayList<Voo> variasEscalas = new ArrayList<>();;
-
-    public VooVariasEscalas(LocalDateTime dataHora, Duration  duracao, Rota rota){
-       super(dataHora, duracao, rota);      
-    }
-
-    public void adicionar(Voo v){
-        this.variasEscalas.add(v);
-        setRota(new Rota(variasEscalas.get(0).getRota().getCiaAerea(), 
-                        variasEscalas.get(0).getRota().getOrigem(), 
-                        variasEscalas.get(variasEscalas.size()-1).getRota().getDestino(),
-                        variasEscalas.get(0).getRota().getAeronave()));
-    }
-
-    public ArrayList<Voo> getVariasEscalas() {
-        return this.variasEscalas;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + "Escalas: " + this.variasEscalas;
-    }
-}
-*/

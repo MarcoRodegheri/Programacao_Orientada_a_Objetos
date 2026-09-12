@@ -31,6 +31,18 @@ public class GerenciadorRotas {
         return listaOrigem;
     }
 
+    public ArrayList<Rota> buscarPorDestino(Aeroporto dest) {
+
+        ArrayList<Rota> listaDestino = new ArrayList<>();
+
+        for (Rota r : rotas) {
+            if (r.getDestino().getCodigo().equalsIgnoreCase(dest.getCodigo()))
+                listaDestino.add(r);
+        }
+
+        return listaDestino;
+    }
+
     public void ordenaNome() {
         Collections.sort(this.rotas);
     }
