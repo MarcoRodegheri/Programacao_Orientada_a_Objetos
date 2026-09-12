@@ -58,12 +58,6 @@ mvn compile
 mvn exec:java -Dexec.mainClass="edu.rodegheri.App"
 ```
 
-## Como rodar os testes
-
-```bash
-mvn test
-```
-
 ## Autor
 
 - Marco Antônio De Carli Rodegheri
